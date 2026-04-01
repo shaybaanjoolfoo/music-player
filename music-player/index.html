@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cae177ee6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="media/Thumbnail.png" class="song-img" />
+        <h1>Despacito</h1>
+        <p>Luis Fonsi Ft. Puerto Rican</p>
+        <audio id="song">
+          <source src="media/Kolaveri.mp3" type="audio/mp3" />
+        </audio>
+        <input type="range" value="100" id="progress" />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
